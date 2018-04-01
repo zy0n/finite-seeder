@@ -36,7 +36,7 @@ class CNode {
     nHeaderStart = vSend.size();
     vSend << CMessageHeader(pszCommand, 0);
     nMessageStart = vSend.size();
-   printf("%s: SEND %s\n", ToString(you).c_str(), pszCommand); 
+   printf("%s: SEND %s\n", ToString(you).c_str(), pszCommand);
   }
 
   void AbortMessage() {
@@ -80,7 +80,7 @@ class CNode {
     CAddress me(CService("0.0.0.0"));
     BeginMessage("version");
     int nBestHeight = GetRequireHeight();
-    string ver = "/darkcoin-seeder:0.1.2/";
+    string ver = "/Finite Core:0.12.2.3/";
     vSend << PROTOCOL_VERSION << nLocalServices << nTime << you << me << nLocalNonce << ver << nBestHeight;
     EndMessage();
   }
