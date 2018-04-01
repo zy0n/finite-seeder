@@ -97,7 +97,7 @@ class CNode {
   }
 
   bool ProcessMessage(string strCommand, CDataStream& vRecv) {
-   printf("%s: RECV %s\n", ToString(you).c_str(), strCommand.c_str());
+   printf("%s: RECV %s %i\n", ToString(you).c_str(), strCommand.c_str(), nVersion);
     if (strCommand == "version") {
       int64 nTime;
       CAddress addrMe;
