@@ -357,7 +357,7 @@ extern "C" void* ThreadStats(void*) {
 }
 
 static const string mainnet_seeds[] = {"seed1.finitecoin.org", ""};
-static const string testnet_seeds[] = {"testnet-seed.finitecoin.org", "static-testnet-seed.finitecoin.org", ""};
+static const string testnet_seeds[] = {"", "", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
