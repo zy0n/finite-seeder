@@ -362,7 +362,7 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("finitecoin.org", 23223), true);
+    db.Add(CService("seed1.finitecoin.org", 23223), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
