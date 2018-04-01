@@ -104,6 +104,7 @@ class CNode {
       CAddress addrFrom;
       uint64 nNonce = 1;
       vRecv >> nVersion >> you.nServices >> nTime >> addrMe;
+      printf("%s\n", nVersion.c_str() );
       if (nVersion == 10300) nVersion = 300;
       if (nVersion >= 106 && !vRecv.empty())
         vRecv >> addrFrom >> nNonce;
